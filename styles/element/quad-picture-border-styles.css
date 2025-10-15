@@ -1,0 +1,86 @@
+#quad-picture-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+#quad-picture-container > div {
+    height: 70%;
+    aspect-ratio: 1;
+    rotate: 45deg;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-bottom: 55px;
+}
+
+/* The four inner containers*/
+#quad-picture-container > div > div {
+    width: 45%;
+    box-sizing:border-box;
+    height: 50%;
+    background-color: lightcoral;
+    margin: 2.5%;
+    overflow: hidden;
+    position: relative;
+}
+
+.quad-picture-item-1 .quad-picture-gradient-border{
+    left: -75%;
+    top: -75%;
+}
+
+.quad-picture-item-2 .quad-picture-gradient-border{
+    left: -185%;
+    top: -75%;
+}
+
+.quad-picture-item-3 .quad-picture-gradient-border{
+    top: -185%;
+    left: -75%;
+}
+
+.quad-picture-item-4 > .quad-picture-gradient-border{
+    top: -185%;
+    left: -185%;
+}
+
+.quad-picture-picture-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.quad-picture-gradient-border {
+    width: 350%;
+    height: 350%;
+    
+    position: absolute;
+
+    background-image: linear-gradient(to bottom left,  var(--white), var(--purpleGradientLighter), var(--orangeGradientLighter) ,var(--white));
+}
+
+.quad-picture-picture {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+.quad-picture-picture > img{
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    background-size: cover;
+    object-fit: cover;
+    rotate: -45deg;
+}

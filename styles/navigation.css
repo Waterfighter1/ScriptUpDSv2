@@ -1,0 +1,120 @@
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    transition: background-color .75s ease;
+    padding: 10px 0px;
+
+    font-family: "Space Mono", monospace;
+}
+
+/* - - - > Logo Section Begin < - - -*/
+
+#nav-logo {
+    float: left;
+    height: 100%;
+    padding-left: 10px;
+    width: 50%;
+}
+#nav-logo > img {
+    height: 80%;
+    margin-top: 5px;
+    float: left;
+}
+#nav-logo > a {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    text-decoration: none;
+
+    width: 200px;
+    float: left;
+    color: var(--primaryContrast);
+    font-weight:normal;
+    padding-left: 10px;
+    margin-top: 15px;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+
+/* - - - > Logo Section End < - - -*/
+/* - - - > Links Section Begin < - - -*/
+
+/* Container */
+#nav-links {
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction:row-reverse;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+/* Styles for all */
+#nav-links > * {
+    font-size: 20px;
+    margin: -5px 10px 0px 10px;
+    height: 50%;
+    color: var(--primaryGrey);
+}
+
+/* Links */
+#nav-links > a {
+    float: right;
+    text-decoration: none;
+    color: var(--primaryGrey);
+    transition: color 1s;
+    margin: -10px 10px 0px 10px;
+    font-weight: 400;
+    height: 30px;
+    height: 30px;
+}
+
+/* Link on hover */
+#nav-links > a:hover {
+    float: right;
+    text-decoration: none;
+    color: var(--primaryContrast);
+    font-weight: bold;
+
+    background-image: linear-gradient(45deg, var(--orangeGradient), var(--purpleGradient));
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0);
+}
+
+/* the / dividers */
+#nav-links > div {
+    width: 3px;
+    height: 20px;
+    rotate: 30deg;
+    background-color: var(--primaryContrast);
+}
+
+/* - - - > Links Section End< - - -*/
+
+
+@media (prefers-color-scheme: dark) {
+    /* Links */
+    #nav-links > a {
+        color: var(--white);
+        transition: color 1s;
+
+        height: 30px;
+
+    }
+
+    /* Link on hover */
+    #nav-links > a:hover {
+        color: var(--primaryGrey);
+        font-weight: bold;
+
+        background-image: linear-gradient(45deg, var(--orangeGradientLighter), var(--purpleGradient));
+        -webkit-background-clip: text;
+        color: rgba(0,0,0,0);
+
+        height: 30px;
+    }
+}
