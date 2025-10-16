@@ -1,3 +1,5 @@
+/* - - - > Banner Start < - - -*/
+
 #banner-container {
     height: calc(100vh - 60px);
     max-height: 800px;
@@ -33,4 +35,86 @@
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-size: 30px;
+}
+
+/* - - - > Contact Start < - - -*/
+
+#contact-container {
+    width: 100%;
+    height: 200px;
+
+    overflow:hidden;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    
+    margin-top: 100px;
+}
+
+#contact-container > div {
+    rotate: 45deg;
+    width: 65%;
+    aspect-ratio: 1;
+    background-color: var(--primaryNeutral);
+    border-radius: 1%;
+
+    
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+#contact-container > div > div {
+    width: 100%;
+    height: 100%;
+    rotate: -45deg;
+    text-align: center;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+#contact-container > div > div > div > * {
+    color: var(--primaryContrast);
+    font-family: "Space Mono", monospace;
+}
+
+#contact-container > div > div > div > h4 {
+    font-weight: 400;
+}
+
+/* - - - > Printer Start < - - -*/
+
+#printer-animation-container {
+    height: 350px;
+    margin-top: 100px;
+}
+
+#printer-animation-container > div{
+    width: 50%;
+}
+
+#printer-animation-container > div {
+    box-shadow: none;
+}
+
+#printer-animation-container > div:hover {
+    box-shadow: none;
+}
+
+
+
+/* - - - > Night Mode Start < - - -*/
+
+@media (prefers-color-scheme: dark) {
+    #contact-container > div {
+        background-color: var(--primaryDarkGrey);
+    }
+
+    #contact-container > div > div > div > * {
+        color: var(--primaryContrast);
+        font-family: "Space Mono", monospace;
+    }
 }

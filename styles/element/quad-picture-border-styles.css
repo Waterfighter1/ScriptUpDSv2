@@ -17,33 +17,50 @@
 
 /* The four inner containers*/
 #quad-picture-container > div > div {
-    width: 45%;
+    min-width: 45%;
     box-sizing:border-box;
     height: 50%;
-    background-color: lightcoral;
     margin: 2.5%;
     overflow: hidden;
     position: relative;
+
+    box-shadow:  3px 3px 10px rgba(26, 26, 26, 0.55),  -3px -3px 10px rgba(26, 26, 26, 0.55);
 }
 
-.quad-picture-item-1 .quad-picture-gradient-border{
-    left: -75%;
-    top: -75%;
+.quad-picture-container-item {
+    transition: margin-left 5s, margin-top 5s;
 }
 
-.quad-picture-item-2 .quad-picture-gradient-border{
-    left: -185%;
-    top: -75%;
+.quad-picture-item-3  {
+    margin-left: -100px !important;
 }
 
-.quad-picture-item-3 .quad-picture-gradient-border{
-    top: -185%;
-    left: -75%;
+.quad-picture-gradient-border {
+    aspect-ratio: 1 !important;
+}
+
+.quad-picture-item-1 > .quad-picture-gradient-border{
+    left: -95%;
+    top: -65%;
+    margin-left: -20px;
+}
+
+.quad-picture-item-2 > .quad-picture-gradient-border{
+    left: -205%;
+    top: -65%;
+    margin-top: -20px;
+}
+
+.quad-picture-item-3 > .quad-picture-gradient-border{
+    top: -176%;
+    left: -50%;
+    margin-left: 20px;
 }
 
 .quad-picture-item-4 > .quad-picture-gradient-border{
-    top: -185%;
-    left: -185%;
+    top: -175%;
+    left: -160%;
+    margin-top: 20px;
 }
 
 .quad-picture-picture-container {
@@ -61,7 +78,8 @@
     
     position: absolute;
 
-    background-image: linear-gradient(to bottom left,  var(--white), var(--purpleGradientLighter), var(--orangeGradientLighter) ,var(--white));
+    background-image: linear-gradient(to bottom left,  var(--white), var(--purpleGradientLighter), var(--orangeGradientLighter) ,var(--orangeGradient));
+    padding: 50px;
 }
 
 .quad-picture-picture {
