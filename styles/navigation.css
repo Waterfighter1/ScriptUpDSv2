@@ -120,3 +120,40 @@ nav {
         height: 30px;
     }
 }
+
+
+
+@media (max-width: 500px) {
+    #nav-logo {
+        width: 25px;
+    }
+
+    #nav-links {
+        width: 100%;
+    }
+
+    #nav-links > a {
+        padding-top: 5px;
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 1023px) {
+    #nav-logo > a {
+        display: none;
+    }
+}
+
+@media (max-width: 1439px) {
+    nav {
+        z-index: 2;
+    }
+}
+
+@media (max-width: 1919px) {
+   
+}
+
+@media (max-width: 2500px) {
+
+}

@@ -18,7 +18,6 @@
 body {
     margin: 0;
     background-image: linear-gradient(to bottom, #dddddd, #bcbcbc);
-
 }
 
 #bodyBackground {
@@ -32,6 +31,7 @@ body {
     padding-bottom: 100px;
 
     overflow: hidden;
+    background-attachment: fixed;
 }
 
 @media (prefers-color-scheme: dark) {

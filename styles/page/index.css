@@ -26,7 +26,7 @@
     color: var(--primaryContrast);
     font-family: "Space Mono", monospace;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 55px;
 
 }
 
@@ -34,7 +34,7 @@
     color: var(--primaryContrast);
     font-family: "Space Mono", monospace;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 45px;
 }
 
 /* - - - > Contact Start < - - -*/
@@ -88,12 +88,23 @@
 /* - - - > Printer Start < - - -*/
 
 #printer-animation-container {
-    height: 350px;
+    width: 80%;
+    margin: auto;
+    height: 450px;
     margin-top: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#printer-animation-printer-container {
+    background-color: white;
 }
 
 #printer-animation-container > div{
     width: 50%;
+    max-width: 600px;
 }
 
 #printer-animation-container > div {
@@ -104,6 +115,49 @@
     box-shadow: none;
 }
 
+#printer-animation-desc-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+}
+
+#printer-animation-desc-container > div {
+    width: 100%;
+}
+
+#printer-animation-desc-container > div > h1 {
+    color: var(--black);
+    transition: color 1s;
+
+    width:fit-content;
+    padding: 0px 10px;
+    margin-left: 75px;
+
+    text-align: center;
+}
+
+#printer-animation-desc-container > a{
+    text-decoration: none;
+    width: max-content;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+
+    border-radius: 5px;
+
+    background-color: var(--primaryContrast);
+    color: var(--primaryNeutral);
+}
+
+#printer-animation-desc-container > div > h1:hover {
+    background-image: linear-gradient(45deg, var(--orangeGradient), var(--purpleGradient));
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(0,0,0,0);
+}
 
 
 /* - - - > Night Mode Start < - - -*/
@@ -117,4 +171,57 @@
         color: var(--primaryContrast);
         font-family: "Space Mono", monospace;
     }
+}
+
+/* 
+Phone (500px - 1023px)
+Tablet (1024px - 1439px)
+Laptop (1440px - 1919px)
+Desktop (1920px - 2500px)
+*/
+@media (max-width: 500px) {
+
+}
+
+@media (max-width: 1023px) {
+    #contact-container > div {
+        rotate: 0deg !important;
+        width: 100% !important;
+    }
+
+     #contact-container > div > div{
+        rotate: 0deg !important;
+    }
+    
+    #event-container {
+        padding-top: 0px !important;
+    }
+
+    #eventContent {
+        flex-wrap:wrap;
+        height: 50%;
+    }
+
+    #event-container {
+        height: 800px;
+    }
+
+    #eventContent > div {
+        width: 80%;
+        margin: 15px 0px;
+    }
+}
+
+@media (max-width: 1439px) {
+    #banner-taline-outer {
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1919px) {
+
+}
+
+@media (max-width: 2500px) {
+
 }
